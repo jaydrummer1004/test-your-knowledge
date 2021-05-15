@@ -4,11 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
     <title>Test Your Knowledge</title>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1 class="title">Test your Javascript Knowledge!</h1>
+    </div>
+    <div class="container">
         <div class="questions-list">
             <ul>
                 <li>Question 1</li>
@@ -28,10 +32,14 @@
             <h1 id="question-to-ask">What is the best kind of Javascript?</h1>
         </div>
         <div class="answers">
-            <div id="answer-1">Justin</div>
-            <div id="answer-2">Bob</div>
-            <div id="answer-3">Martin</div>
-            <div id="answer-4">Larry</div>
+            <div class="left-side">
+                <div id="answer-1" class="answer">Justin</div>
+                <div id="answer-3" class="answer">Martin</div>
+            </div>
+            <div class="right-side">
+                <div id="answer-2" class="answer">Bob</div>
+                <div id="answer-4" class="answer">Larry</div>
+            </div>
         </div>
         <div class="score">
             <h3>Current Score</h3>

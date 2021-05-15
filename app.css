@@ -1,6 +1,9 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    background-color: #424B54;
+    font-family: 'Poppins', sans-serif;
+    color: #F5F5F5;
 }
 
 .container{
@@ -8,17 +11,24 @@ body{
     margin-left: 2rem;
     margin-right: 2rem;
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 10% 60% 30% ;
-    grid-template-areas: 
-        "header header"
+    position: relative;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 70% 30% ;
+    grid-template-areas:         
         "questions question"
         "score answers";
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.header{
+    padding:0.5rem;
 }
 
 .title{
-    grid-area: header;
     text-align: center;
+    font-weight: 800;
+    letter-spacing: 0.3;
 }
 
 .questions-list{
@@ -27,6 +37,11 @@ body{
 
 .question{
     grid-area: question;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #515C67;
+    border-radius: 5px;
 }
 
 .score{
@@ -35,4 +50,23 @@ body{
 
 .answers{
     grid-area: answers;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.answers .left-side{
+    width: 50%;
+}
+
+.answers .right-side{
+    width: 50%;
+}
+
+.answer{
+    padding: 2rem;
+    margin: 1rem;
+    background-color: lightgreen;
+    text-align: center;
 }
