@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10% 60% 30% ;
+    grid-template-areas: 
+        "header header"
+        "questions question"
+        "score answers";
+}
+
+.title{
+    grid-area: header;
+    text-align: center;
+}
+
+.questions-list{
+    grid-area: questions;
+}
+
+.question{
+    grid-area: question;
+}
+
+.score{
+    grid-area: score;
+}
+
+.answers{
+    grid-area: answers;
+}
